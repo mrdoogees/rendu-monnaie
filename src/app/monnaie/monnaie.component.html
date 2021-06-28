@@ -1,0 +1,22 @@
+<div>
+	<label>Cash: </label>
+	<input [(ngModel)]="cash" /> €
+
+	<br>
+	<br>
+	<label>Coins available:</label>
+	<ul>
+		<li>2 €</li>
+		<li>5 €</li>
+		<li>10 €</li>
+	</ul>
+
+	<br>
+	<button (click)="change()">Change</button>
+
+	<br>
+	<ul>
+		<li *ngFor="let r of results">{{r}}</li>
+	</ul>
+
+</div>
